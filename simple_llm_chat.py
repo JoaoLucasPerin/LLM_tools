@@ -32,3 +32,12 @@ response = client.generate(model=model, prompt=prompt)
 print("Response from Ollama:")
 print(response.response)
 
+# Output:
+
+# Response from Ollama:
+
+# The capital of the United States of America is Washington, D.C. (District of Columbia).
+
+# Reference:
+# https://www.youtube.com/watch?v=UtSSMs6ObqY
+################################################################################################################
