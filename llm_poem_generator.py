@@ -7,7 +7,7 @@
 
 #------------------------------------------------------
 # Instructions:
-# pip install streamlit langchain langchain-community langchain-core
+# pip install streamlit langchain-community
 # download the bin of the LLM in https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
 # You can choose llama-2-7b-chat.ggmlv3.q2_K.bin, for example
 # put the bin file in the same directory of this script
@@ -17,7 +17,8 @@
 #-------------------------------------------------------
 
 import streamlit as st
-from langchain.llms import CTransformers
+#from langchain.llms import CTransformers           # Will be deprecated soon
+from langchain_community.llms import CTransformers  # You can use it
 
 llm = CTransformers(
     model="llama-2-7b-chat.ggmlv3.q2_K.bin",
